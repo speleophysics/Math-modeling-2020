@@ -44,8 +44,15 @@ Anaconda also comes with another IDE called **[Spyder](https://www.spyder-ide.or
 
 [Git-it](https://github.com/jlord/git-it-electron) is a desktop app that provides a brief tutorial to the process of installing and using git. Read through the intro page at the above link and then go to the [releases section to download Git-it](http://github.com/jlord/git-it-electron/releases).
 
+To prepare yourself for using Git in class, go through the first 6 "challenges" provided by Git-it, ending with "Forks and Clones".
 
+## Setting up git repositories for class
 
+In class, we will use two different git repositories. One is a **master class repository** that contains code that I provide and/or create during lectures. This *is* that master repository (Math-modeling-2020).  
 
+The second repository will be your **own repository** where you store and track your own code. If you wanted, you could also create a separate repository specifically for your project, as this would help to separate out your project code from your in-class and homework code. 
 
+### Forking the master course repo
+
+To set up the main course repository on your own computer follow the instructions in Git-it for forking a repository. Only, instead of forking `patchwork`, fork [`Math-modeling-2020`](https://github.com/speleophysics/Math-modeling-2020). 
 
