@@ -14,7 +14,7 @@ You can find some general information about using Anaconda [here](https://docs.a
 
 ## Visual Studio Code (or VS Code)
 
-**VS Code** is what is called an *interactive development environment.* It is a text editor for coding that is combined with a lot of additional functionality that makes writing, reading, running, and debugging code easier. This software is also free. When working with Python code in this class, we will primarily use VS Code.
+**VS Code** is what is called an [interactive development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) or **IDE**. It is a text editor for coding that is combined with a lot of additional functionality that makes writing, reading, running, and debugging code easier. This software is also free. When working with Python code in this class, we will primarily use VS Code.
 
 You can find information on downloading and installing VS Code [here](https://code.visualstudio.com/).
 
@@ -31,6 +31,19 @@ For this course you will need the following extensions to be installed:
 * Live Share Extension Pack
 
 Use the instructions found at the links above to install these extensions within your copy of VS Code.
+
+Anaconda also comes with another IDE called **[Spyder](https://www.spyder-ide.org/)**. This is also a quite capable IDE, but it does not have some of the interactive components that we will use in class.
+
+## Git and Github
+
+**Git** is a [distributed version control system](https://www.atlassian.com/git/tutorials/what-is-version-control). It allows us to keep track of changes within our code by creating shapshots of that code (called commits) at different points in time. This can be incredibly useful if you mess something up in your code and want to revert to an older version. However, it also helps you to keep track of progress or go back and see the history of your changes. 
+
+**Github** is an online server where you can publish your git repositories. This is important because it creates an online backup of your work. It also makes it easier to share your code with others. In fact, Git and Github really shine when you have a team of programmers working on the same code. It provides a very useful workflow for collaborative programming.
+
+### Git-it
+
+[Git-it](https://github.com/jlord/git-it-electron) is a desktop app that provides a brief tutorial to the process of installing and using git. Read through the intro page at the above link and then go to the [releases section to download Git-it](http://github.com/jlord/git-it-electron/releases).
+
 
 
 
