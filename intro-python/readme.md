@@ -32,7 +32,7 @@ For this course you will need the following extensions to be installed:
 
 Use the instructions found at the links above to install these extensions within your copy of VS Code.
 
-Anaconda also comes with another IDE called **[Spyder](https://www.spyder-ide.org/)**. This is also a quite capable IDE, but it does not have some of the interactive components that we will use in class.
+Anaconda also comes with another IDE called **[Spyder](https://www.spyder-ide.org/)**. This is also a quite capable IDE, but it does not have some of the interactive capabilities that we will use in class.
 
 ## Git and Github
 
@@ -60,13 +60,13 @@ To open a terminal on a Mac, see [these instructions](https://support.apple.com/
 
 In class, we will use two different git repositories. One is a **main class repository** that contains code that I provide and/or create during lectures. This *is* that main repository (Math-modeling-2020).  
 
-The second repository will be your **own repository** where you store and track your own code. If you wanted, you could also create a separate repository specifically for your project, as this would help to separate out your project code from your in-class and homework code. 
+The second repository will be your **own repository** where you store and track your own code. I also recommend that you create a separate repository specifically for your project, as this would help to separate out your project code from your in-class and homework code.
 
 ### Organizing your repos
 
 You will want to decide where to put your class git repos. My suggestion is that you create a directory (i.e. folder) within your `Documents` directory called `Math-Modeling` and then put the repos within this directory (each repo will be in its own directory that has the same name as the repo). The name of the main course repo is `Math-modeling-2020`. You will want to chose a different name for your own repository so that the directory names don't conflict (e.g. `my-math-modeling-code` would be one option). Repo names can't have spaces.
 
-To navigate among these directories from the terminal, you will need to use the `cd` command. When you open a terminal it should start in your main user directory. Your `Documents` folder will be a subdirectory of this user directory. The commands below would get you from the main user directory down into the directory containing the main course repo, and then pull the latest copy of the repo from Github, assuming you use the same directory names suggested above (*Note: The $ just indicates a terminal command. You do not type this in.*),
+To navigate among these directories from the terminal, you will need to use the `cd` command (change directory). This is the terminal-based equivalent of navigating around through your folders with a file browser. When you open a terminal it should start in your main user directory. Your `Documents` folder will be a subdirectory of this user directory. The commands below would get you from the main user directory down into the directory containing the main course repo, and then pull the latest copy of the repo from Github, assuming you use the same directory names suggested above (*Note: The $ just indicates a terminal command. You do not type this in.*),
 
 ```
 $ cd Documents
@@ -84,12 +84,19 @@ $ cd my-math-modeling-code
 
 Then you could enter git commands for your repo. Note `..` means next directory up in the structure. So, when you are in one of the repo directories, `..` refers to the `Math-modeling` directory. If you were in the `Math-modeling` directory, it would refer to the `Documents` directory. 
 
+You can also string together directory names with a `/`, so that, for example the first commands shown above could be shorted into:
+
+```
+$ cd Documents/Math-modeling-2020
+$ git pull 
+```
+In most terminals, you can also use `Tab` to auto-complete folder and file names. Try partially typing in a folder name and then hitting `Tab`. 
 
 ### Forking the main course repo
 
 To set up the main course repository on your own computer follow the instructions in Git-it for forking a repository. Only, instead of forking `patchwork`, fork [`Math-modeling-2020`](https://github.com/speleophysics/Math-modeling-2020). 
 
-It will be easiest to deal with this repo if you don't actually edit the code within in. If you want to mess around with code from the main course repo, I suggest you copy the specific files over into your repo before editing. You can use `$ git pull` from a terminal in the directory containing the repo in order to download the most recent updates to the main course repo. Alternatively, you can also use the Git GUI or the Git interface found in VS Code, which we will use frequently in class.
+It will be easiest to deal with this repo if you don't actually edit the code within in. If you want to mess around with code from the main course repo, I suggest you copy the specific files over into your own repo before editing. You can use `$ git pull` from a terminal in the directory containing the repo in order to download the most recent updates to the main course repo. Alternatively, you can also use the Git GUI or the Git interface found in VS Code, which we will use frequently in class.
 
 ### Creating your own course repo
 
@@ -107,7 +114,7 @@ Once you have installed Anaconda, VS Code, and Git, and have created the two cou
 
 1. Use the Explorer panel in VS Code to navigate to `A-quick-and-dirty-python-intro.ipynb` and open it.
 
-1. When you open it, it will tell you to Select Python Interpreter. You main only have one option, but you are looking for something like `'base':conda` or `anaconda3`.
+1. When you open it, it will tell you to Select Python Interpreter. You may only have one option, but, if you have more than one, you are looking for something like `'base':conda` or `anaconda3`. The python version should be 3.x.
 
 1. Start at the top and run through the code in the Notebook. You can runs cells of code by clicking on the *green play button* by the cell, or by clicking on the code in the cell so that the cursor is in the cell and then pressing `Shift-Enter`. If you are already familiar with Python, the contents of the Notebook will probably not be anything new. However, going through this quick exercise assures that your VS Code setup is working.
 
