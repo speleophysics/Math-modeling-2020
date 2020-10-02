@@ -1,0 +1,116 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6-final"
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "Python 3.7.6 64-bit ('base': conda)",
+   "display_name": "Python 3.7.6 64-bit ('base': conda)",
+   "metadata": {
+    "interpreter": {
+     "hash": "dd98ccf96c3a56fec4b4bdd397410c9d15351d8e53ee0c0a274d38b71d2ef059"
+    }
+   }
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "Using matplotlib backend: Qt5Agg\nPopulating the interactive namespace from numpy and matplotlib\n"
+    }
+   ],
+   "source": [
+    "%pylab"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": "Text(0, 0.5, &#39;x*&#39;)"
+     },
+     "metadata": {},
+     "execution_count": 14
+    }
+   ],
+   "source": [
+    "#Define Parameters\n",
+    "R_SS = 2.5 * 10**-5 #m/yr\n",
+    "P = 10**8 #yr\n",
+    "slope = 1./5000.\n",
+    "D = 2.5 * 10**5 # m\n",
+    "omega = 2.*pi/P \n",
+    "psi = R_SS/(slope*D*omega)\n",
+    "\n",
+    "#Set up solution arrays, timestep, and initial condition\n",
+    "nsteps = 1000\n",
+    "dt = 0.001\n",
+    "t = arange(nsteps)*dt\n",
+    "x = zeros(nsteps+1)\n",
+    "x[0] = 0.\n",
+    "\n",
+    "#Loop through the timesteps and calculate shoreline position for each time\n",
+    "tstep = 0\n",
+    "for time in t:\n",
+    "    x[tstep+1] = x[tstep] + dt *(-2*pi*sin(2*pi*time) - 2*pi*psi*x[tstep] ) \n",
+    "    tstep = tstep + 1\n",
+    "\n",
+    "#Plot solution and sea level oscillations\n",
+    "x_ana = -1./sqrt(psi**2+1) * sin(2*pi*t - arctan(1/psi))\n",
+    "plot(t, x[:-1])\n",
+    "plot(t, x_ana, '--')\n",
+    "xlabel('t*')\n",
+    "ylabel('x*')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": "array([0.   , 0.001, 0.002, 0.003, 0.004])"
+     },
+     "metadata": {},
+     "execution_count": 4
+    }
+   ],
+   "source": [
+    "arange(5)*dt "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}
