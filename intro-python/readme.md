@@ -94,20 +94,20 @@ In most terminals, you can also use `Tab` to auto-complete folder and file names
 
 ### Forking the main course repo
 
-*Updated directions: Rather than forking the main course repository, as originally described, I suggest that you simple clone the repo. From the Git Bash terminal you can do this by first using 'cd' to navigate to the folder that you want to contain your repository (the repository will download into a subfolder in this folder). Then use 'git clone' with the clone https link from Github. For example:*
+*Updated directions: Rather than forking the main course repository, as originally described, I suggest that you simply clone the repo. From the Git Bash terminal you can do this by first using `cd` to navigate to the folder that you want to contain your repository (the repository will download into a subfolder in this folder). Then use `git clone` with the clone https link from Github. For example:*
 
-'''
+```
 $ cd Documents/Math-modeling
 $ git clone https://github.com/speleophysics/Math-modeling-2020.git
-'''
+```
 
-*That's it! Now you should be able to use 'git pull' from the Math-modeling-2020 directory in order to update to the lastest version. Note, if you ever accidentally edit code in the main course repo and have trouble with pulling the latest version, you can run:*
+*That's it! Now you should be able to use `git pull` from the Math-modeling-2020 directory in order to update to the lastest version. Note, if you ever accidentally edit code in the main course repo and have trouble with pulling the latest version, you can run:*
 
-'''
+```
 $ cd Documents/Math-modeling/Math-modeling-2020/
 $ git stash
 $ git pull
-'''
+```
 
 *Alternatively, worst case, just delete the whole folder that contains the main course repo and clone it afresh.*
 
