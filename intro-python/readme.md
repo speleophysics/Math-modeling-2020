@@ -133,4 +133,4 @@ Once you have installed Anaconda, VS Code, and Git, and have created the two cou
 
 1. Start at the top and run through the code in the Notebook. You can runs cells of code by clicking on the *green play button* by the cell, or by clicking on the code in the cell so that the cursor is in the cell and then pressing `Shift-Enter`. If you are already familiar with Python, the contents of the Notebook will probably not be anything new. However, going through this quick exercise assures that your VS Code setup is working.
 
-
+test
